@@ -16,7 +16,8 @@ There's one caveat, blue bananas can't harm the robots, the actualy enjoy their 
 
 ![Trained Agent][img_trained_agent]
 
-A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of the agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
+A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of the agent is to collect as many yellow bananas as possible while avoiding blue bananas. 
+For this task we'll be using [Deep Q-networks](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
 
 The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction.  Given this information, the agent has to learn how to best select actions.  Four discrete actions are available, corresponding to:
 - **`0`** - move forward.
